@@ -10,7 +10,7 @@ const App = () => {
             <div>
                 <NavBar/>
                 <Routes>
-                    <Route path='/' exact element = {<Feed/>} />
+                    <Route path='/YoutubeClone' exact element = {<Feed/>} />
                     <Route path='/video/:id' element = {<VideoDetail/>} />
                     <Route path='/channel/:channelId' element = {<ChannelDetail/>} />
                     <Route path='/search/:searchTerm' element = {<Search/>} />

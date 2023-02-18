@@ -22,7 +22,8 @@ const VideoDetail = () => {
     <>
     <div className=" bg-dark mx-auto" >
         <div className="col-md-10 mx-auto">
-          <center className="pt-5 mx-auto"><ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='50%'/>
+          <center><ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='80vw'/></center>
+          <center className="pt-5 mx-auto">
           <div className="text-center display-6 pt-5">
             <Link to = {`/channel/${channelId}`} className="nav-link text-light text-center"> <div>Channel: {channelTitle} <CheckCircle sx={{ fontSize: 20, color: 'gray', ml: '5px' }} /></div> </Link>
             
