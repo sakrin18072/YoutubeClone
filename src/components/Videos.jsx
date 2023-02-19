@@ -7,7 +7,7 @@ const Videos = ({ videos }) => {
         <div className='d-flex flex-wrap mx-auto'>
             {
                 videos.map((item,idx)=>(
-                    <div key={idx} className='mx-auto'>
+                    <div key={idx} className='mx-auto' style={{overflowY:'scroll', overflowX:'hidden'}}>
                     {item?.id?.videoId && <VideoCard video = {item}/>}
                     {item?.id?.channelId && <ChannelCard channel = {item}/>}
                     </div>

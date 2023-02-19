@@ -17,7 +17,7 @@ const Search = () => {
   }, [searchTerm])
 
   return (
-    <div className=' col-md-10 bg-dark w-100  d-flex flex-column justify-content-center' style={{ overflowY: 'hidden' }}>
+    <div className=' col-md-10 bg-dark w-100 d-flex flex-column justify-content-center' style={{ overflowY: 'hidden' }}>
       <div className='display-6' style={{ marginLeft: '15px' }}>
         <span className='text-light'>Search Results for </span>
         <span className='text-danger'>{searchTerm}</span>

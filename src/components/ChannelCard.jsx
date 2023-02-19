@@ -14,7 +14,7 @@ const ChannelCard = ({ channel ,MarginTop}) => {
           <div className='p-2 text-center' style={{ height: '80px', borderBottomLeftRadius: '25px', borderBottomRightRadius: '25px' ,}}>
             <div className='p-1'>
               <Link className='text-light' style={{ textDecoration: 'none' }}
-                to={`/channel/${channel?.id?.channelId}`}>{channel?.snippet?.title.slice(0, 40)}</Link>
+                to={`/YoutubeClone/channel/${channel?.id?.channelId}`}>{channel?.snippet?.title.slice(0, 40)}</Link>
               <CheckCircle sx={{ fontSize: 15, color: 'gray', ml: '5px' }} />
             </div>
             {/* <div className='p-2 text-center'>

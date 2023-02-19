@@ -4,6 +4,7 @@ import { SideBar, Feed , NavBar} from './components'
 import ChannelDetail from './components/ChannelDetail'
 import VideoDetail from './components/VideoDetail'
 import Search from './components/Search'
+import './App.css'
 const App = () => {
   return (
         <BrowserRouter>
@@ -11,9 +12,9 @@ const App = () => {
                 <NavBar/>
                 <Routes>
                     <Route path='/YoutubeClone' exact element = {<Feed/>} />
-                    <Route path='/video/:id' element = {<VideoDetail/>} />
-                    <Route path='/channel/:channelId' element = {<ChannelDetail/>} />
-                    <Route path='/search/:searchTerm' element = {<Search/>} />
+                    <Route path='/YoutubeClone/video/:id' element = {<VideoDetail/>} />
+                    <Route path='/YoutubeClone/channel/:channelId' element = {<ChannelDetail/>} />
+                    <Route path='/YoutubeClone/search/:searchTerm' element = {<Search/>} />
                 </Routes>
             </div>
         </BrowserRouter>
