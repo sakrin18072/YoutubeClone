@@ -3,7 +3,6 @@ import SideBar from './SideBar'
 import { Videos } from './'
 import { useState } from 'react'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
-import './Feed.css'
 const Feed = () => {
   const [videos, setVideos] = useState([])
   const [selectedCategory, setSelectedCategory] = useState('New')
