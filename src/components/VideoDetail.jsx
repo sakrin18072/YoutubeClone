@@ -17,15 +17,16 @@ const VideoDetail = () => {
       .then(data => setVideosSide(data.items))
   }, [id])
   if (!video?.snippet) return 'Loading...'
+  console.log(video)
   const { snippet: { title, channelId, channelTitle, description } } = video
   return (
     <>
-      <div className="row bg-dark" style={{width:'inherit'}} >
-        <div className="col-12 col-md-8 p-5">
+      <div className="d-flex bg-dark p-4 flex-wrap" style={{width:'inherit'}} >
+        <div className="col-12 col-md-8" style={{ height: '100vh', overflowY: 'scroll' }}>
           <div>
-          <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='inherit'/>
+          <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='100%' height="70vh"/>
           </div>
-
+          <h3 className="text-light mt-2">{title}</h3>
           <Link to={`/YoutubeClone/channel/${channelId}`} className="nav-link text-light mt-3"> <div>Channel: {channelTitle} <CheckCircle sx={{ fontSize: 20, color: 'gray', ml: '5px' }} /></div> </Link>
 
 
@@ -33,8 +34,8 @@ const VideoDetail = () => {
           <div className="text-light pb-5 ">{description}</div>
 
         </div>
-        <div className="col-12 col-md-4" style={{ height: '100vh', overflowY: 'scroll' }}>
-          <div className="h2 bg-dark text-center text-light pb-5">Similar Videos to <span className="text-danger">watch</span></div>
+        <div className=" col-12 col-md-4" style={{ height: '100vh', overflowY: 'scroll' }}>
+          <div className="h4 bg-dark text-center text-light pb-5">Similar Videos to <span className="text-danger">watch</span></div>
           <Videos videos={videosSide} />
         </div>
       </div>

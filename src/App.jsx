@@ -8,7 +8,7 @@ import './App.css'
 const App = () => {
   return (
         <BrowserRouter>
-            <div>
+            <div className='scrollbar'>
                 <NavBar/>
                 <Routes>
                     <Route path='/YoutubeClone' exact element = {<Feed/>} />
