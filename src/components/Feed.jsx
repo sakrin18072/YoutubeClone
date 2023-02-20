@@ -19,21 +19,20 @@ const Feed = () => {
   }, [selectedCategory])
 
   return (
-    <div className='row row-cols-sm-12' style={{overflowX:'hidden'}}>
-      <div className='custom col col-12 col-sm-12 col-lg-2 bg-dark text-light' style={{height:'92vh',overflowY:'scroll'}} >
+    <div className='d-flex' style={{overflowX:'hidden'}}>
+      <div className='col-12 col-md-3 col-lg-2 bg-dark text-light' style={{height:'92vh',overflowY:'scroll'}} >
         <SideBar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         <div className='text-light text-center mt-3'>
           Copyright 2023 sakrin
         </div>
       </div>
       
-      <div className='col col-12 col-sm-12 col-lg-10 bg-dark' style={{height:'100vh',overflowY:'scroll'}} >
-        <div className='h2'>
-          <span className='text-danger'>{selectedCategory} </span>
-          <span className='text-light'>Videos</span>
+        <div className='col-12 col-md-9 col-lg-10 bg-dark' style={{height:'92vh',overflowY:'scroll'}}>
+          <span className='text-danger h2'>{selectedCategory} </span>
+          <span className='text-light h2'>Videos</span>
+          <Videos videos={videos} />
         </div>
-        <Videos videos={videos} />
-      </div>
+       
       
     </div>
     

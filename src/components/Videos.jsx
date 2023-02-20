@@ -4,12 +4,12 @@ import ChannelCard from './ChannelCard'
 const Videos = ({ videos }) => {
     if(videos===null) return 'Loading...'
     return (
-        <div className='d-flex flex-wrap mx-auto'>
+        <div className='d-flex flex-row flex-wrap'>
             {
                 videos.map((item,idx)=>(
-                    <div key={idx} className='mx-auto' style={{overflowY:'scroll', overflowX:'hidden'}}>
+                    <div key={idx} className='mx-auto'>
                     {item?.id?.videoId && <VideoCard video = {item}/>}
-                    {item?.id?.channelId && <ChannelCard channel = {item}/>}
+                    <div>{item?.id?.channelId && <ChannelCard channel = {item}/>}</div>
                     </div>
                 ))
             }

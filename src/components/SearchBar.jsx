@@ -12,14 +12,14 @@ const SearchBar = () => {
         setSearchTerm('')
     }
   return (
-    <form className='mx-auto w-50 ' onSubmit={handleSumbit} >
-        <input type="text" className='p-2 bg-dark text-light'
-         style={{borderRadius:'20px',boxShadow:'none',border:'1.5px solid white',width:'70%'}}
+    <form className='mx-auto d-flex flex-column flex-md-row row-cols-12 row-cols-md-8' onSubmit={handleSumbit} >
+        <input type="text" className='p-2 bg-dark text-light '
+         style={{margin:'10px',borderRadius:'20px',boxShadow:'none',border:'1.5px solid white'}}
          value = {searchTerm}
          onChange={(e)=>setSearchTerm(e.target.value)}
          />
         <button className='btn btn-light' 
-        style={{borderRadius:'25px', padding:'12px',marginLeft:'8px'}}
+        style={{borderRadius:'25px', padding:'12px', margin:'10px'}}
         type='submit'
         >
             Search

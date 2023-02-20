@@ -9,8 +9,8 @@ const VideoCard = ({ video }) => {
 
       
         <div className='p-3' >
-          <img className='' style={{ border: 'none', height: '180px', width: '360px', borderTopLeftRadius: '25px', borderTopRightRadius: '25px', objectFit: 'cover' }} src={video?.snippet?.thumbnails?.high?.url} alt="" />
-          <div className='p-2' style={{width:'360px',height:'80px', backgroundColor: '#000', borderBottomLeftRadius: '25px', borderBottomRightRadius: '25px' }}>
+          <img className='' style={{ border: 'none', height: '142px', width: '256px', borderTopLeftRadius: '25px', borderTopRightRadius: '25px', objectFit: 'cover' }} src={video?.snippet?.thumbnails?.high?.url} alt="" />
+          <div className='p-2 d-flex flex-column' style={{width:'256px',height:'120px', backgroundColor: '#000', borderBottomLeftRadius: '25px', borderBottomRightRadius: '25px' }}>
             <div className='p-1' style={{}}>
               <Link className='text-light' style={{ textDecoration: 'none' }}
                 to={`/YoutubeClone/video/${video?.id?.videoId}`}>{video?.snippet?.title?.slice(0, 35)}</Link>

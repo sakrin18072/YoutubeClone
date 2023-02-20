@@ -21,7 +21,7 @@ const ChannelDetail = () => {
       </div>
       <div className='text-dark'>
       <ChannelCard channel={currentChannel} MarginTop='-192px'/>
-      <p className='display-6 text-center text-danger'>Uploads</p>
+      <p className=' text-center text-danger bold h1' style={{marginTop:'-192px'}}>Uploads</p>
       <div className="container" style={{marginLeft:'auto'}}>
         <Videos videos = {videos}/>
       </div>
