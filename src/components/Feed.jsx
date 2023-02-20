@@ -28,7 +28,7 @@ const Feed = () => {
       </div>
       
         <div className='col-12 col-md-9 col-lg-10 bg-dark' style={{height:'92vh',overflowY:'scroll'}}>
-          <span className='text-danger h2'>{selectedCategory} </span>
+          <span className='text-danger h2 p-4'>{selectedCategory} </span>
           <span className='text-light h2'>Videos</span>
           <Videos videos={videos} />
         </div>
