@@ -20,9 +20,9 @@ const VideoDetail = () => {
   console.log(video)
   const { snippet: { title, channelId, channelTitle, description } } = video
   return (
-    <>
+    <div className="bg-dark" style={{overflowY:'scroll'}}>
       <div className="d-flex bg-dark p-4 flex-wrap" style={{width:'inherit'}} >
-        <div className="col-12 col-md-8" style={{ height: '100vh', overflowY: 'scroll' }}>
+        <div className="col-12 col-md-8" style={{ height: '83vh' }}>
           <div>
           <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='100%' height="70vh"/>
           </div>
@@ -34,14 +34,14 @@ const VideoDetail = () => {
           <div className="text-light pb-5 ">{description}</div>
 
         </div>
-        <div className=" col-12 col-md-4" style={{ height: '100vh', overflowY: 'scroll' }}>
+        <div className=" col-12 col-md-4" style={{ height: '83vh' }}>
           <div className="h4 bg-dark text-center text-light pb-5">Similar Videos to <span className="text-danger">watch</span></div>
           <Videos videos={videosSide} />
         </div>
       </div>
 
 
-    </>
+    </div>
   )
 }
 
