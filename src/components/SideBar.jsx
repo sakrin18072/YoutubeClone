@@ -1,6 +1,5 @@
-import { Stack } from '@mui/material'
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import './SideBar.css'
 import { categories } from '../utils/constants'
 const SideBar = ({selectedCategory,setSelectedCategory}) => {
   return (

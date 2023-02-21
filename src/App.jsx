@@ -4,6 +4,7 @@ import { SideBar, Feed , NavBar} from './components'
 import ChannelDetail from './components/ChannelDetail'
 import VideoDetail from './components/VideoDetail'
 import Search from './components/Search'
+import './App.css'
 const App = () => {
   return (
         <BrowserRouter>
