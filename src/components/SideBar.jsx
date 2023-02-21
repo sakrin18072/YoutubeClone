@@ -3,7 +3,7 @@ import './SideBar.css'
 import { categories } from '../utils/constants'
 const SideBar = ({selectedCategory,setSelectedCategory}) => {
   return (
-    <div className='d-flex flex-wrap flex-column' style={{padding:'10px'}}>
+    <div className='d-flex flex-wrap flex-column' style={{padding:'10px', position:'static' }} >
       {
         categories.map(category=>(
           <div className='p-3 btn text-light d-flex flex-row' onClick={()=>{setSelectedCategory(category.name)}}
