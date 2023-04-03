@@ -8,9 +8,9 @@ import './App.css'
 const App = () => {
   return (
         <BrowserRouter>
-            <div>
+            <div >
                 <NavBar/>
-                <Routes>
+                <Routes style={{height:'100vh'}}>
                     <Route path='/YoutubeClone' exact element = {<Feed/>} />
                     <Route path='/YoutubeClone/video/:id' element = {<VideoDetail/>} />
                     <Route path='/YoutubeClone/channel/:channelId' element = {<ChannelDetail/>} />

@@ -15,7 +15,7 @@ const ChannelDetail = () => {
   },[channelId])
   console.log(currentChannel)
   return (
-    <div className='bg-dark' style={{height:'auto'}}>
+    <div className='' style={{height:'auto'}}>
       <div style={{background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,9,121,1) 20%, rgba(0,212,255,1) 100%)',height:'300px'}}>
 
       </div>

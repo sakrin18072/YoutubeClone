@@ -6,9 +6,9 @@ const SideBar = ({selectedCategory,setSelectedCategory}) => {
     <div className='d-flex flex-wrap flex-column' style={{padding:'10px', position:'static' }} >
       {
         categories.map(category=>(
-          <div className='p-3 btn text-light d-flex flex-row' onClick={()=>{setSelectedCategory(category.name)}}
+          <div className='p-3 btn d-flex flex-row bg-light' onClick={()=>{setSelectedCategory(category.name)}}
             style={{display:'block',backgroundColor:selectedCategory===category.name?'red':'#212529',borderRadius:'25px'}}  key={category.name}>
-            <span className='' style={{color:selectedCategory===category.name?'white':'red'}}>{category.icon}&nbsp;</span>
+            <span className='' style={{color:selectedCategory===category.name?'#001':'red'}}>{category.icon}&nbsp;</span>
             <span>{category.name}</span>
           </div>
         ))
