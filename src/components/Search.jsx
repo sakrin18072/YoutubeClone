@@ -19,7 +19,7 @@ const Search = () => {
   return (
     <div className=' col-md-10 w-100 d-flex flex-column justify-content-center' style={{ overflowY: 'hidden' }}>
       <div className='display-6' style={{ marginLeft: '15px' }}>
-        <span className='text-light'>Search Results for </span>
+        <span className=''>Search Results for </span>
         <span className='text-danger'>{searchTerm}</span>
       </div>
       <div className='container ' >

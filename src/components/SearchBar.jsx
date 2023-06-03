@@ -13,7 +13,7 @@ const SearchBar = () => {
     }
   return (
     <form className='justify-content-center mx-auto d-flex flex-column flex-md-row  w-100' onSubmit={handleSumbit} >
-        <input type="text" className='ml-auto p-2 border text-light col-11 col-md-5'
+        <input type="text" className='ml-auto p-2 border col-11 col-md-5'
          style={{margin:'10px',borderRadius:'20px',boxShadow:'none',border:'1.5px solid white'}}
          value = {searchTerm}
          onChange={(e)=>setSearchTerm(e.target.value)}
