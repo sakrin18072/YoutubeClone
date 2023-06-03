@@ -1,7 +1,5 @@
-import { Stack } from '@mui/system'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { logo } from '../utils/constants'
 import SearchBar from './SearchBar'
 const NavBar = () => {
   return (

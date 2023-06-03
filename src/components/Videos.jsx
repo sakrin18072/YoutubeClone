@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import VideoCard from './VideoCard'
 import ChannelCard from './ChannelCard'
 const Videos = ({ videos }) => {

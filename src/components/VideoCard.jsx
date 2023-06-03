@@ -1,6 +1,4 @@
-import { padding } from '@mui/system'
 import React from 'react'
-import { Card } from 'react-bootstrap'
 import { CheckCircle } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 const VideoCard = ({ video }) => {
